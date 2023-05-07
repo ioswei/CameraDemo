@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AWCameraToolVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywf-lD-JXC">
+                    <rect key="frame" x="0.0" y="707" width="393" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Om-sH-TBM">
+                            <rect key="frame" x="169.66666666666666" y="33" width="54" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="takePhoto"/>
+                            <connections>
+                                <action selector="awtakePhotoButtonClick:" destination="-1" eventType="touchUpInside" id="mul-f0-JsS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJj-my-CpY">
+                            <rect key="frame" x="43" y="38" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="cKT-2j-1VR"/>
+                                <constraint firstAttribute="width" secondItem="SJj-my-CpY" secondAttribute="height" multiplier="1:1" id="iKI-kg-8HW"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="cameraPhoto"/>
+                            <connections>
+                                <action selector="awOpenCamera" destination="-1" eventType="touchUpInside" id="EBH-kP-0RP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhX-wV-bVr">
+                            <rect key="frame" x="306" y="38" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="RhX-wV-bVr" secondAttribute="height" multiplier="1:1" id="URA-xv-a4e"/>
+                                <constraint firstAttribute="width" constant="44" id="hAw-WA-ddD"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="closeFlish"/>
+                            <state key="selected" image="openFlish"/>
+                            <connections>
+                                <action selector="awFlashButtonClick:" destination="-1" eventType="touchUpInside" id="pgb-lK-6c6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RhX-wV-bVr" secondAttribute="trailing" constant="43" id="Css-PW-L0H"/>
+                        <constraint firstItem="SJj-my-CpY" firstAttribute="leading" secondItem="Ywf-lD-JXC" secondAttribute="leading" constant="43" id="EXs-BM-cbJ"/>
+                        <constraint firstItem="3Om-sH-TBM" firstAttribute="centerX" secondItem="Ywf-lD-JXC" secondAttribute="centerX" id="TT0-gm-u6k"/>
+                        <constraint firstItem="RhX-wV-bVr" firstAttribute="centerY" secondItem="Ywf-lD-JXC" secondAttribute="centerY" id="Wgb-zd-EgS"/>
+                        <constraint firstAttribute="height" constant="120" id="gNs-ic-2Z1"/>
+                        <constraint firstItem="3Om-sH-TBM" firstAttribute="centerY" secondItem="Ywf-lD-JXC" secondAttribute="centerY" id="psm-pF-HwR"/>
+                        <constraint firstItem="SJj-my-CpY" firstAttribute="centerY" secondItem="Ywf-lD-JXC" secondAttribute="centerY" id="xjk-OV-8Bn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4L2-0l-y5y">
+                    <rect key="frame" x="24" y="44" width="35" height="35"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icon_guanbi"/>
+                    <connections>
+                        <action selector="awCancleCamera" destination="-1" eventType="touchUpInside" id="zdI-cS-JXK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4L2-0l-y5y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="24" id="7lY-dh-oVG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ywf-lD-JXC" secondAttribute="trailing" id="Ytk-l9-WQN"/>
+                <constraint firstItem="4L2-0l-y5y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="lld-lF-6ZB"/>
+                <constraint firstItem="Ywf-lD-JXC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="lrq-jO-3Pp"/>
+                <constraint firstAttribute="bottom" secondItem="Ywf-lD-JXC" secondAttribute="bottom" constant="25" id="wCx-Cg-R5r"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cameraPhoto" width="22" height="16.666666030883789"/>
+        <image name="closeFlish" width="14" height="22"/>
+        <image name="icon_guanbi" width="35" height="35"/>
+        <image name="openFlish" width="14" height="27.666666030883789"/>
+        <image name="takePhoto" width="54" height="54"/>
+    </resources>
+</document>

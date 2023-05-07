@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AWClipPhotoVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cau-em-MdQ">
+                    <rect key="frame" x="174.66666666666666" y="759" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="0X5-Xl-LEn"/>
+                        <constraint firstAttribute="height" constant="44" id="iIs-wy-Hcu"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="clipPhoto"/>
+                    <state key="selected" image="backPhoto"/>
+                    <connections>
+                        <action selector="clipClick:" destination="-1" eventType="touchUpInside" id="Wdw-9D-4xi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1c-Rg-lqm">
+                    <rect key="frame" x="50" y="759" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="BWO-u0-oH6"/>
+                        <constraint firstAttribute="height" constant="44" id="hLS-Sw-iSu"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="canclePhoto"/>
+                    <state key="selected" image="canclePhoto"/>
+                    <connections>
+                        <action selector="backLastVCClick:" destination="-1" eventType="touchUpInside" id="pVb-J4-PbS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG7-sm-LVA">
+                    <rect key="frame" x="299" y="759" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Bhy-1Q-cXh"/>
+                        <constraint firstAttribute="width" constant="44" id="H1J-ck-GAQ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="surePhoto"/>
+                    <state key="selected" image="surePhoto"/>
+                    <connections>
+                        <action selector="finshClick:" destination="-1" eventType="touchUpInside" id="SEL-qX-dkk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="p1c-Rg-lqm" secondAttribute="bottom" constant="15" id="22z-UK-HfQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="PG7-sm-LVA" secondAttribute="bottom" constant="15" id="8dd-Mw-ujF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Cau-em-MdQ" secondAttribute="bottom" constant="15" id="Vpa-f4-fBD"/>
+                <constraint firstItem="p1c-Rg-lqm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="WZX-Lw-I95"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PG7-sm-LVA" secondAttribute="trailing" constant="50" id="fMM-xd-WSn"/>
+                <constraint firstItem="Cau-em-MdQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wyL-IG-0pU"/>
+            </constraints>
+            <point key="canvasLocation" x="15" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backPhoto" width="54" height="54"/>
+        <image name="canclePhoto" width="54" height="54"/>
+        <image name="clipPhoto" width="54" height="54"/>
+        <image name="surePhoto" width="54" height="54"/>
+    </resources>
+</document>

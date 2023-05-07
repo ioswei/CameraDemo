@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6EBF0B412A05F80500EEC39F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF0B402A05F80500EEC39F /* AppDelegate.m */; };
-		6EBF0B442A05F80500EEC39F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF0B432A05F80500EEC39F /* SceneDelegate.m */; };
 		6EBF0B472A05F80500EEC39F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF0B462A05F80500EEC39F /* ViewController.m */; };
 		6EBF0B4A2A05F80500EEC39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF0B482A05F80500EEC39F /* Main.storyboard */; };
 		6EBF0B4C2A05F80600EEC39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF0B4B2A05F80600EEC39F /* Assets.xcassets */; };
@@ -25,8 +24,6 @@
 		6EBF0B3C2A05F80500EEC39F /* CameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBF0B3F2A05F80500EEC39F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6EBF0B402A05F80500EEC39F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6EBF0B422A05F80500EEC39F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		6EBF0B432A05F80500EEC39F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		6EBF0B452A05F80500EEC39F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6EBF0B462A05F80500EEC39F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6EBF0B492A05F80500EEC39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,8 +73,6 @@
 			children = (
 				6EBF0B3F2A05F80500EEC39F /* AppDelegate.h */,
 				6EBF0B402A05F80500EEC39F /* AppDelegate.m */,
-				6EBF0B422A05F80500EEC39F /* SceneDelegate.h */,
-				6EBF0B432A05F80500EEC39F /* SceneDelegate.m */,
 				6EBF0B452A05F80500EEC39F /* ViewController.h */,
 				6EBF0B462A05F80500EEC39F /* ViewController.m */,
 				6EBF0B582A05F8AD00EEC39F /* AWCameraTool */,
@@ -183,7 +178,6 @@
 				E25C6CA12A07E27C008764F4 /* AWMangerClipImageView.m in Sources */,
 				E25C6C9D2A07E194008764F4 /* AWClipPhotoVC.m in Sources */,
 				6EBF0B522A05F80600EEC39F /* main.m in Sources */,
-				6EBF0B442A05F80500EEC39F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +322,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "想要访问你的相机";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "想要访问你的相册";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请允许APP保存图片到相册";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -355,9 +351,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "想要访问你的相机";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "想要访问你的相册";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请允许APP保存图片到相册";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

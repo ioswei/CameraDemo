@@ -59,6 +59,8 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES];
+
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 在子线程中执行代码
         if (self.session) {
@@ -69,6 +71,8 @@
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:YES];
+    [self.navigationController setNavigationBarHidden:NO];
+
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 在子线程中执行代码
         if (self.session) {
@@ -259,7 +263,9 @@
 #pragma mark =====关闭
 - (IBAction)awCancleCamera
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"1111");
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 #pragma mark ===== 打开/关闭闪光灯

@@ -18,15 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor = UIColor.orangeColor;
     
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     AWCameraToolVC *cameraViewvController = [[AWCameraToolVC alloc] init];
-    UINavigationController *ANavigationController = [[UINavigationController alloc] initWithRootViewController:cameraViewvController];
-    ANavigationController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:ANavigationController animated:YES completion:nil];
+
+    [self.navigationController pushViewController:cameraViewvController animated:YES];
         
 }
 
